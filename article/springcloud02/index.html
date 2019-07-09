@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          [Spring Cloud] Spring Cloud教程01 服务注册与发现 - SuHeng Qi | Blog
+          [Spring Cloud] Spring Cloud教程02 服务配置中心 - SuHeng Qi | Blog
         
     </title>
 
-    <link rel="canonical" href="https://qisuheng.github.io/article/springcloud01/">
+    <link rel="canonical" href="https://qisuheng.github.io/article/springcloud02/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -91,11 +91,11 @@
                               <a class="tag" href="/tags/#Spring Cloud" title="Spring Cloud">Spring Cloud</a>
                             
                         </div>
-                        <h1>[Spring Cloud] Spring Cloud教程01 服务注册与发现</h1>
-                        <h2 class="subheading">Spring Cloud教程01 服务注册与发现.</h2>
+                        <h1>[Spring Cloud] Spring Cloud教程02 服务配置中心</h1>
+                        <h2 class="subheading">Spring Cloud教程02 服务配置中心.</h2>
                         <span class="meta">
                             Posted by SuHeng Qi on
-                            2019-07-08
+                            2019-07-09
                         </span>
                     </div>
                 
@@ -215,9 +215,9 @@
                 <h2 id="版本信息">版本信息</h2>
 <p>Spring Boot 2.1.6.RELEASE</p>
 <p>Spring Cloud  Greenwich.RELEASE</p>
-<p>采用Eureka作为注册中心，spring cloud 并不强依赖于Eureka，替代品如阿里的开源项目<a href="https://nacos.io/zh-cn/docs/quick-start.html" target="_blank" rel="noopener">Nacos</a>。</p>
-<p>参考 <a href="https://spring.io/projects/spring-cloud-netflix" target="_blank" rel="noopener">Spring Cloud Netflix</a></p>
-<h2 id="创建eureka-server注册中心">创建eureka-server注册中心</h2>
+<p>参考 <a href="https://spring.io/projects/spring-cloud-config" target="_blank" rel="noopener">Spring Cloud Config</a></p>
+<p>配置管理工具包，让你可以把配置放到远程服务器，集中化管理集群配置，目前支持本地存储、Git以及Subversion。</p>
+<h2 id="创建config-server配置中心">创建config-server配置中心</h2>
 <hr>
 <p>首先创建一个新的maven工程，目录结构如下</p>
 <p><img src="../springcloud01/2_1.png" alt="home_posts_tag-true"></p>
@@ -242,13 +242,9 @@
                 <!-- Pager -->
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/article/springcloud02/" data-toggle="tooltip" data-placement="top" title="[Spring Cloud] Spring Cloud教程02 服务配置中心">&larr; Previous Post</a>
-                        </li>
-                    
                     
                         <li class="next">
-                            <a href="/article/conllection/" data-toggle="tooltip" data-placement="top" title="[Collection] Collection集合">Next Post &rarr;</a>
+                            <a href="/article/springcloud01/" data-toggle="tooltip" data-placement="top" title="[Spring Cloud] Spring Cloud教程01 服务注册与发现">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -298,7 +294,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#版本信息"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">&#x7248;&#x672C;&#x4FE1;&#x606F;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#创建eureka-server注册中心"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x521B;&#x5EFA;eureka-server&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#启动eurekaserverapplication并查看控制台"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">&#x542F;&#x52A8;EurekaServerApplication&#xFF0C;&#x5E76;&#x67E5;&#x770B;&#x63A7;&#x5236;&#x53F0;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#查看健康检查-审计-统计和监控"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">&#x67E5;&#x770B;&#x5065;&#x5EB7;&#x68C0;&#x67E5;&#x3001;&#x5BA1;&#x8BA1;&#x3001;&#x7EDF;&#x8BA1;&#x548C;&#x76D1;&#x63A7;</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#版本信息"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">&#x7248;&#x672C;&#x4FE1;&#x606F;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#创建config-server配置中心"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x521B;&#x5EFA;config-server&#x914D;&#x7F6E;&#x4E2D;&#x5FC3;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#启动eurekaserverapplication并查看控制台"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">&#x542F;&#x52A8;EurekaServerApplication&#xFF0C;&#x5E76;&#x67E5;&#x770B;&#x63A7;&#x5236;&#x53F0;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#查看健康检查-审计-统计和监控"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">&#x67E5;&#x770B;&#x5065;&#x5EB7;&#x68C0;&#x67E5;&#x3001;&#x5BA1;&#x8BA1;&#x3001;&#x7EDF;&#x8BA1;&#x548C;&#x76D1;&#x63A7;</span></a></li></ol>
         
         </div>
       </aside>

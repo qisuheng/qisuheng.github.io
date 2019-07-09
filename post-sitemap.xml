@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>https://qisuheng.github.io/article/springcloud02/</loc>
+        <lastmod>2019-07-09T08:05:17.483Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://qisuheng.github.io/article/springcloud01/</loc>
-        <lastmod>2019-07-09T06:53:15.847Z</lastmod>
+        <lastmod>2019-07-09T07:44:46.022Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
