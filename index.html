@@ -134,13 +134,6 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/tags/">Tags</a>
                         </li>
                         
@@ -149,6 +142,13 @@
                         
                         <li>
                             <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -211,7 +211,53 @@
 
 <div class="post-preview">
 
-    <a href="/article/springcloud02/">
+    <a href="/article/springcloud/">
+        <h2 class="post-title">
+            
+                <i class="fa fa-thumb-tack" style="color:#F4711F" ></i>
+                <!-- <i class="fa fa-thumb-tack" style="color:#F89E8C" ></i> -->
+                <!-- <i class="fa fa-thumb-tack" style="color:#1CB7ED" ></i> -->
+                <font color=#F4711F>置顶</font>
+                <!-- <font color=#F89E8C>置顶</font>  -->
+                <!-- <font color=#1CB7ED>置顶</font>  -->
+                                 
+            [Spring Cloud] Spring Cloud教程0 从零开始搭建spring cloud
+        </h2>
+        <h3 class="post-subtitle">
+            Spring Cloud教程0 从零开始搭建spring cloud.
+        </h3>
+        <div class="post-content-preview">
+            版本信息
+Spring Boot 2.1.6.RELEASE
+Spring Cloud  Greenwich.RELEASE
+目录结构
+|sqys
+​	|eureka-server
+​	|admin-server
+​	|config-server
+准备工作
+新建一个新maven工程，作为父工程，pom.xml如下
+123456789101112131415161718192021222324......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by SuHeng Qi on
+            2019-07-10
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Spring Cloud" title="Spring Cloud">Spring Cloud</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/springcloud03/">
         <h2 class="post-title">
             
                 <i class="fa fa-thumb-tack" style="color:#F4711F" ></i>
@@ -231,12 +277,10 @@
 Spring Boot 2.1.6.RELEASE
 Spring Cloud  Greenwich.RELEASE
 参考 Spring Cloud Config
-配置管理工具包，让你可以把配置放到远程服务器，集中化管理集群配置，目前支持本地存储、Git以及Subversion。
+配置管理工具包，让你可以把配置放到远程服务器，集中化管理集群配置，目前支持本地存储、Git以及Subversion，本文采用Git方式。
 创建config-server配置中心
 
-首先创建一个新的maven工程，目录结构如下
-
-修改后pom.......
+首先创建一个新的maven工程，目录结构如......
         </div>
     </a>
     
@@ -279,9 +323,9 @@ Spring Cloud  Greenwich.RELEASE
 参考 Spring Cloud Netflix
 创建eureka-server注册中心
 
-首先创建一个新的maven工程，目录结构如下
+在原有工程下，添加一个modual，目录结构如下
 
-修改后pom......
+修改后p......
         </div>
     </a>
     
@@ -292,43 +336,6 @@ Spring Cloud  Greenwich.RELEASE
         <div class="tags">
             
               <a href="/tags/#Spring Cloud" title="Spring Cloud">Spring Cloud</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/article/conllection/">
-        <h2 class="post-title">
-                                 
-            [Collection] Collection集合
-        </h2>
-        <h3 class="post-subtitle">
-            Collection集合
-        </h3>
-        <div class="post-content-preview">
-            
-This QiSuHeng theme created by QiSuHeng modified from the original Porter YuHsuan
-
-hashmap
-QiSuHeng Blog :
-Install Hexo
-Install Node.js  and Git
-123#For Macbrew install nodebrew install git
-Instal......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by SuHeng Qi on
-            2019-07-04
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#Collection" title="Collection">Collection</a>
             
         </div>
     
@@ -419,9 +426,7 @@ Inst......
             
         
             
-        
-            
-            <a href="/tags/#Spring Cloud" title="Spring Cloud" rel="2">Spring Cloud</a>
+            <a href="/tags/#Spring Cloud" title="Spring Cloud" rel="3">Spring Cloud</a>
             
         
     </div>
@@ -477,15 +482,15 @@ Inst......
     <ul>
       
         <li>
-          <a href="/article/springcloud02/">[Spring Cloud] Spring Cloud教程02 服务配置中心</a>
+          <a href="/article/springcloud/">[Spring Cloud] Spring Cloud教程0 从零开始搭建spring cloud</a>
+        </li>
+      
+        <li>
+          <a href="/article/springcloud03/">[Spring Cloud] Spring Cloud教程02 服务配置中心</a>
         </li>
       
         <li>
           <a href="/article/springcloud01/">[Spring Cloud] Spring Cloud教程01 服务注册与发现</a>
-        </li>
-      
-        <li>
-          <a href="/article/conllection/">[Collection] Collection集合</a>
         </li>
       
         <li>

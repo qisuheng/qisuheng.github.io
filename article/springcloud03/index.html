@@ -18,7 +18,7 @@
         
     </title>
 
-    <link rel="canonical" href="https://qisuheng.github.io/article/springcloud02/">
+    <link rel="canonical" href="https://qisuheng.github.io/article/springcloud03/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -142,13 +142,6 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/tags/">Tags</a>
                         </li>
                         
@@ -157,6 +150,13 @@
                         
                         <li>
                             <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -216,7 +216,7 @@
 <p>Spring Boot 2.1.6.RELEASE</p>
 <p>Spring Cloud  Greenwich.RELEASE</p>
 <p>参考 <a href="https://spring.io/projects/spring-cloud-config" target="_blank" rel="noopener">Spring Cloud Config</a></p>
-<p>配置管理工具包，让你可以把配置放到远程服务器，集中化管理集群配置，目前支持本地存储、Git以及Subversion。</p>
+<p>配置管理工具包，让你可以把配置放到远程服务器，集中化管理集群配置，目前支持本地存储、Git以及Subversion，本文采用Git方式。</p>
 <h2 id="创建config-server配置中心">创建config-server配置中心</h2>
 <hr>
 <p>首先创建一个新的maven工程，目录结构如下</p>
@@ -241,6 +241,10 @@
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/article/springcloud/" data-toggle="tooltip" data-placement="top" title="[Spring Cloud] Spring Cloud教程0 从零开始搭建spring cloud">&larr; Previous Post</a>
+                        </li>
                     
                     
                         <li class="next">
