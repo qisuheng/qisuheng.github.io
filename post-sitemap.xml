@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>https://qisuheng.github.io/article/es-kibana/</loc>
+        <lastmod>2019-07-16T02:46:16.945Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://qisuheng.github.io/article/config-server/</loc>
         <lastmod>2019-07-12T05:46:36.340Z</lastmod>
         <changefreq>weekly</changefreq>
